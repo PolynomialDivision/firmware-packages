@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=freifunk-berlin-network-defaults
 
-include ../../freifunk-berlin-generic.mk
+include $(INCLUDE_DIR)/package.mk
 
 define Package/freifunk-berlin-network-defaults
   SECTION:=freifunk-berlin

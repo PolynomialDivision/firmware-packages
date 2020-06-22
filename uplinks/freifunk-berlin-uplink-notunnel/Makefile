@@ -3,7 +3,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=freifunk-berlin-uplink-notunnel-files
 
-include ../../freifunk-berlin-generic.mk
+include $(INCLUDE_DIR)/package.mk
 
 define Package/$(PKG_NAME)
   SECTION:=freifunk-berlin

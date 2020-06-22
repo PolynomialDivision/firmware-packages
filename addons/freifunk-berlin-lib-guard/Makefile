@@ -3,7 +3,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=freifunk-berlin-lib-guard
 PKG_RELEASE:=2
 
-include ../../freifunk-berlin-generic.mk
+include $(INCLUDE_DIR)/package.mk
 
 define Package/freifunk-berlin-lib-guard
   SECTION:=freifunk-berlin
