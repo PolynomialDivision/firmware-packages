@@ -16,4 +16,4 @@ else
 endif
 
 # include $(LUCIMKFILE)
-include ../luci/luci.mk
+include ../../luci/luci.mk
