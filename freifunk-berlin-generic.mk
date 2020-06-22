@@ -15,4 +15,5 @@ else
 #$(info found luci.mk at $(LUCIMKFILE))
 endif
 
-include $(LUCIMKFILE)
+# include $(LUCIMKFILE)
+include ../luci/luci.mk
