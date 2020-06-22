@@ -9,6 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=freifunk-berlin-configtools
 PKG_RELEASE:=1
+PKG_VERSION:=0.0.3
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 

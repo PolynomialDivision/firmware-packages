@@ -2,6 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=freifunk-berlin-tunneldigger
 PKG_RELEASE:=1
+PKG_VERSION:=0.0.3
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=git://github.com/wlanslovenija/tunneldigger.git
