@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=Freifunk Berlin configuration wizard
-LUCI_DEPENDS:=+luci-base +luci-compat +luci-mod-admin-full +freifunk-policyrouting +luci-lib-jsonc +luci-lib-ipkg
+LUCI_DEPENDS:=+luci-base +luci-compat +luci-mod-admin-full +freifunk-policyrouting +luci-lib-jsonc +luci-lib-ipkg +community-profiles
 
 include ../../luci.mk
 
