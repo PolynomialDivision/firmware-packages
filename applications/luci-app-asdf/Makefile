@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 
 LUCI_TITLE:=Test Test Test
-LUCI_DEPENDS:=+luci-base +luci-compat +luci-mod-admin-full +freifunk-policyrouting +luci-lib-jsonc +community-profiles
+LUCI_DEPENDS:=+luci-base
 
 include ../../luci.mk
 
