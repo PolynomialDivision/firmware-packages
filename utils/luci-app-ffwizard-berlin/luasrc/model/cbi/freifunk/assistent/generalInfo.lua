@@ -20,7 +20,7 @@ end
 local profiles = "/etc/config/profile_"
 for v in fs.glob(profiles.."*") do
   local n = string.gsub(v, profiles, "")
-  local name = uci:get_first("profile_"..n, "community", "name") or "?"
+  local name = uci:get_first("profile_"..n, "profile", "name") or "?"
   community:value(n, name)
 end
 
