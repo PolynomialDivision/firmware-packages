@@ -1,11 +1,24 @@
 {
         "luci-app-ffwizard-berlin": {
-                "description": "Grant UCI access for luci-app-ffwizard-berlin",
+                "description": "Super user access role",
                 "read": {
                         "ubus": {
-                                        "luci-app-ffwizard-berlin": ["has_root-pass" ]
-                                }
+                                "*": [ "*" ]
+                        },
+                        "uci": [ "*" ],
+                        "file": {
+                                "*": ["*"]
                         }
+                },
+                "write": {
+                        "ubus": {
+                                "*": [ "*" ]
+                        },
+                        "uci": [ "*" ],
+                        "file": {
+                                "*": ["*"]
+                        },
+                        "cgi-io": ["*"]
                 }
         }
 }

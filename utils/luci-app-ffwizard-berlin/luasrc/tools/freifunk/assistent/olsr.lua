@@ -4,7 +4,14 @@ local ip = require "luci.ip"
 local tools = require "luci.tools.freifunk.assistent.tools"
 
 local sharenet = uci:get("ffwizard","settings","sharenet")
-local community = "profile_"..uci:get("freifunk", "community", "name")
+local profile, err = uci:get("freifunk", "community", "name")
+local community = "profile_berlin"
+
+if profile ~= false then
+	community, err = "profile_"..profile
+else
+    luci.util.perror(err)
+end
 
 module "luci.tools.freifunk.assistent.olsr"
 

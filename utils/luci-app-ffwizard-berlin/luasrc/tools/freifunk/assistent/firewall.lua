@@ -6,7 +6,14 @@ module ("luci.tools.freifunk.assistent.firewall", package.seeall)
 
 function prepareFirewall()
 	local c = uci.cursor()
-	local community = "profile"..c:get("freifunk","community","name")
+	local profile, err = "profile"..c:get("freifunk","community","name")
+	local community = "profile_berlin"
+
+	if profile ~= false then
+			community, err = "profile_"..profile
+	else
+			luci.util.perror(err)
+	end
 
 	c:foreach("freifunk", "fw_forwarding", function(section)
 		c:section("firewall", "forwarding", nil, section)
