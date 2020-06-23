@@ -1,9 +1,11 @@
 {
         "luci-app-ffwizard-berlin": {
                 "description": "Grant UCI access for luci-app-ffwizard-berlin",
-		"ubus": {
-                                "luci-app-ffwizard-berlin": ["has_root-pass" ]
+                "read": {
+                        "ubus": {
+                                        "luci-app-ffwizard-berlin": ["has_root-pass" ]
+                                }
                         }
-		}
+                }
+        }
 }
-
